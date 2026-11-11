@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Collector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <h1>⭐ STAR COLLECTOR</h1>
+
+        <div class="game-info">
+            <span>Score: <span id="score">0</span></span>
+            <span>Lives: <span id="lives">3</span></span>
+        </div>
+
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+        <button id="startButton">START GAME</button>
+
+        <p>Use WASD or Arrow Keys to move</p>
+
+    </div>
+
+    <script src="game.js"></script>
+
+<div id="shop">
+    <h2>⚔️ Survival Shop</h2>
+
+    <p>Available Stars: <span id="shopStars">0</span></p>
+
+    <div class="shop-item">
+        <h3>Wooden Sword</h3>
+        <p>Basic weapon</p>
+        <p>Price: 30 Stars</p>
+        <button onclick="buyItem('woodenSword')">
+            Buy
+        </button>
+    </div>
+
+    <div class="shop-item">
+        <h3>Iron Sword</h3>
+        <p>Stronger weapon</p>
+        <p>Price: 75 Stars</p>
+        <button onclick="buyItem('ironSword')">
+            Buy
+        </button>
+    </div>
+
+    <div class="shop-item">
+        <h3>Leather Armor</h3>
+        <p>Basic protection</p>
+        <p>Price: 40 Stars</p>
+        <button onclick="buyItem('leatherArmor')">
+            Buy
+        </button>
+    </div>
+
+    <div class="shop-item">
+        <h3>Iron Armor</h3>
+        <p>Strong protection</p>
+        <p>Price: 100 Stars</p>
+        <button onclick="buyItem('ironArmor')">
+            Buy
+        </button>
+        
+    </div>
+    <div id="playerStats">
+        <h2>🛡️ Player Stats</h2>
+        <p>⚔️ Damage: <span id="damageValue">1</span></p>
+        <p>🛡️ Armor: <span id="armorValue">0%</span></p>
+</div>
+</div>
+
+
+</body>
+</html>
